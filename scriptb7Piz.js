@@ -49,6 +49,13 @@ pizzaJson.map((item, index)=>{
 
 //Eventos do modal.
 
+
+c('.pizzaWindowArea').addEventListener('click', (e) => {
+    if (e.target === c('.pizzaWindowArea')) {
+        closeModal();
+    }
+});
+
 function closeModal(){
     c('.pizzaWindowArea').style.opacity = 0;
     setTimeout(()=>{
